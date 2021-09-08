@@ -9,6 +9,7 @@
   	crossorigin="anonymous"></script>
   	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="buscarCargo.php"></script>
 
 	<title>Register your date</title>
 </head> 
@@ -30,7 +31,21 @@
 					<form id="form" action="insertar.php" method="post">
 						<div class="form-group ">
 							<label for="cedula" class="form-label text-info">Ingresa tu cargo</label>
-							<input type="text" class="form-control" name="cedula" id="cedula" >
+							
+
+
+							<!-- select de cargo -->
+
+							<select name="cargo" id="cargo">
+							 <option value="0" >Selecciona tu cargo</option>
+							 
+							</select>
+
+							<!-- fin select de cargo -->
+
+
+
+
 						</div>
 						<div class="form-group">
 							<label for="nombre" class="form-label text-info">Ingresa tu nombre de usuario</label>
@@ -63,7 +78,7 @@
 								<button class="btn btn-outline-primary w-100 my-1">
 								<div class="row align-items-center">
 									<div class="col-2">
-										<img src="imagenes/faceboock.png" width="32" alt="">
+										<img src="../imagenes/faceboock.png" width="32" alt="">
 									</div>
 									<div class="col-10 text-center">
 										Faceboock
@@ -76,7 +91,7 @@
 								<button class="btn btn-outline-danger w-100 my-1" >
 								<div class="row align-items-center">
 									<div class="col-2">
-										<img src="imagenes/gmail.png" width="32" alt="">
+										<img src="../imagenes/gmail.png" width="32" alt="">
 									</div>
 									<div class="col-10 text-center">
 										Google
@@ -93,8 +108,7 @@
 		</div>
 
 	</div>
-
-
+<script src="metodosAjax.js"></script>
 
 </body>
 </html>
