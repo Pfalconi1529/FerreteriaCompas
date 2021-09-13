@@ -28,24 +28,16 @@
 					<h4 class="fw-bold text-center text-success my-4">Registrate para acceder al sistema</h4>
 
 
-					<form id="form" action="insertar.php" method="post">
+					<form enctype="multipart/form-data" method="post" id="formImagen">
 						<div class="form-group ">
-							<label for="cedula" class="form-label text-info">Ingresa tu cargo</label>
-							
-
-
+							<label for="cargo" class="form-label text-info">Ingresa tu cargo</label>
 							<!-- select de cargo -->
 
-							<select name="cargo" id="cargo">
-							 <option value="0" >Selecciona tu cargo</option>
+							<select class="form-select" name="cargo" id="cargo">
 							 
 							</select>
 
 							<!-- fin select de cargo -->
-
-
-
-
 						</div>
 						<div class="form-group">
 							<label for="nombre" class="form-label text-info">Ingresa tu nombre de usuario</label>
@@ -63,13 +55,12 @@
 							<label for="imagen" class="form-label text-info">Selecciona tu imagen de usuario</label>
 							<input type="file" class="form-control" name="imagen" id="imagen">
 						</div>
-						
-						<div class="d-grid">
-							<input type="submit" class="btn btn-outline-success btn-block my-2" name="registro">
+						<div class="form-group">
+						<button type="submit" class="btn btn-outline-success btn-block container my-4"  id="registro" name="registro">Registrate</button>
 						</div>
-						
-					</form id="form">
-					<div class="container w-100 my-5">
+
+					</form>
+					<!-- <div class="container w-100 my-5">
 						<div class="row text-center">
 							<div class="col-12">Log in</div>
 						</div>
@@ -102,7 +93,7 @@
 						</div>
 
 
-					</div>
+					</div> -->
 				</div>
 			</div>
 		</div>
